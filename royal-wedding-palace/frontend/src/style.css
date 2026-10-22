@@ -1,0 +1,17 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+:root{font-family:Inter,ui-sans-serif,system-ui,sans-serif;color:#f6f1e9;background:#11100e;font-synthesis:none;text-rendering:optimizeLegibility}
+body{margin:0}h1,h2,h3{font-family:Georgia,serif}h2{font-size:clamp(2rem,4vw,3rem)}h3{font-size:1.45rem}
+section{max-width:1180px;margin:auto;padding:100px 24px}.bg-neutral-900{max-width:none}
+.site-nav{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px clamp(20px,4vw,60px);background:rgba(16,14,12,.97);position:sticky;top:0;z-index:20;border-bottom:1px solid #5f482b}
+.site-nav nav{font-size:12px;text-transform:uppercase;letter-spacing:.06em}
+.hero{background-position:center;background-size:cover;min-height:690px}
+.eyebrow{text-transform:uppercase;letter-spacing:.23em;color:#cda96c;font-size:11px;font-weight:bold}
+.btn-gold{background:#cda96c;color:#17120c;padding:13px 24px;text-transform:uppercase;font-weight:700;letter-spacing:.06em;font-size:12px;border-radius:3px;transition:transform .2s,background .2s}
+.btn-gold:hover{transform:translateY(-2px);background:#e4c48c}.btn-gold:disabled{opacity:.5;cursor:not-allowed}
+.lux-card{background:#1d1a16;border:1px solid #413527;border-radius:12px;overflow:hidden}
+.lux-card img{width:100%;height:280px;object-fit:cover}.glass{background:linear-gradient(145deg,rgba(63,51,37,.5),rgba(23,20,18,.87));border:1px solid rgba(205,169,108,.2);border-radius:12px}
+.muted{color:#b8afa4}.section-title{text-align:center;margin-bottom:45px}.page-head{text-align:center;margin-bottom:55px}.page-head h1{font-size:clamp(2.4rem,5vw,4rem);margin-top:14px}
+label{display:block;font-size:13px;color:#dcd0bc}input:not([type=checkbox]),select,textarea{display:block;width:100%;background:#27231e;border:1px solid #705837;border-radius:5px;color:#fff;padding:11px 12px;margin-top:8px;min-width:0}
+input[type=checkbox]{accent-color:#cda96c}option{color:#111;background:#fff}footer{padding:65px 25px;border-top:1px solid #59462f;background:#0e0c0a}
+.light{background:#f7f3eb;color:#1f1c17}.light .muted{color:#62584d}.light section:not(.bg-neutral-900) .glass,.light .lux-card{background:#fff;color:#221d17}.light footer{background:#f0e5d5}.light input:not([type=checkbox]),.light select,.light textarea{background:#fff;color:#181512}
+@media(max-width:767px){.site-nav{flex-wrap:wrap}.site-nav nav{width:100%;flex-direction:column;align-items:flex-start}.hero{min-height:560px}section{padding:65px 20px}}
