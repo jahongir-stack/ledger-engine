@@ -21,6 +21,7 @@ python -m venv .venv
 # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 cp .env.example .env  # on Windows: copy .env.example .env
+python manage.py makemigrations
 python manage.py migrate
 python manage.py seed_demo
 python manage.py createsuperuser
@@ -59,3 +60,5 @@ Django's conditional database unique constraint is the final safeguard; create o
 
 ## Known production follow-ups
 Add rate limiting/email verification, background notification delivery, structured audit logs, real payment provider and payment reconciliation, deployed object storage for uploads, localized server messages and end-to-end browser tests.
+## Status
+Source-code implementation; this repository has not yet passed an installed-dependency build, migrations run or end-to-end deployment validation. Generate initial migrations with `python manage.py makemigrations` before first `migrate`. Review and commit generated migration files before production deployment.
